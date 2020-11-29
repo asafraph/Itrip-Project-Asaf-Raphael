@@ -24,10 +24,10 @@ app.use('/vacations', vacationsRouteFile)
 app.use('/users', usersRouteFile)
 app.use('/follow', followRouteFile)
 
-// root route
-app.get('/', (req, res) => {
-	res.send('welcome to my vacations site =)')
-})
+// // root route
+// app.get('/', (req, res) => {
+// 	res.send('welcome to my vacations site =)')
+// })
 
 //hosting
 app.use(express.static(path.join(__dirname, 'build')));
